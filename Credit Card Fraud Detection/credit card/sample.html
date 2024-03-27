@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Fraud Detection - Page 2</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <main class="container">
+        <section class="ui">
+            <div class="container-left">
+                <form id="credit-card">
+                    <div class="input-container">
+                        <label for="employment">Employment</label>
+                        <select name="employment" id="employment" required>
+                            <option value="">Select employment status</option>
+                            <option value="employed">Employed</option>
+                            <option value="self-employed">Self-Employed</option>
+                            <option value="unemployed">Unemployed</option>
+                            <option value="selfemployed">SelfEmployed</option>                           
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="mobile-number">Mobile Number</label>
+                        <input type="tel" name="mobile-number" id="mobile-number" placeholder="Enter your mobile number" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="card-limit">Card Limit</label>
+                        <input type="number" name="card-limit" id="card-limit" placeholder="Enter card limit" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="transaction-amount">Transaction Amount</label>
+                        <input type="number" name="transaction-amount" id="transaction-amount" placeholder="Enter transaction amount" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="card-verification">Card Verification</label>
+                        <input type="text" name="card-verification" id="card-verification" placeholder="Enter card-verification" required>
+    
+                    </div>
+                    <div class="input-container">
+                        <label for="monthly-income">Monthly Income</label>
+                        <input type="number" name="monthly-income" id="monthly-income" placeholder="Enter monthly income" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="annual-income">Annual Income</label>
+                        <input type="number" name="annual-income" id="annual-income" placeholder="Enter annual income" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="foreign-transaction">Foreign Transaction</label>
+                        <select name="foreign-transaction" id="foreign-transaction" required>
+                            <option value="">Select foreign transaction status</option>
+                            <option value="true">Yes</option>
+                            <option value="false">No</option>
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="transaction-frequency">Transaction Frequency Weekday</label>
+                        <label for="transaction-frequenc-weekday">transaction-frequency</label>
+                        <input type="number" name="transaction-frequency" id="transaction-frequency-weekday" placeholder="Enter weekday" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="transaction-frequency">Transaction Frequency Weekend</label>
+                        <label for="transaction-frequenc-weekend">transaction-frequency</label>
+                        <input type="number" name="transaction-frequency" id="transaction-frequency-weekend" placeholder="Enter weekend" required>
+                    </div>
+
+            
+            
+                    
+            </form>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 0 20px;">
+                <input type="submit" value="Back" id="submit" style="background-color:rgb(255, 60, 60); width: 150px;">
+                <input type="submit" value="Submit" id="submit" style="background-color: greenyellow; width: 150px;">
+            </div>
+            <br><br>
+            <hr><br>
+            <div>
+                <h1>Prediction result:</h1>
+                <p>{{predicted_text}}</p>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
